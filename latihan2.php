@@ -44,16 +44,20 @@ while ($data = mysqli_fetch_assoc($result)) {
          <th>Aksi</th>
       </tr>
       <!-- baris data -->
-      <tr>
-         <td>1</td>
-         <td>Foto</td>
-         <td>20410100055</td>
-         <td>Akbar Bintang</td>
-         <td>Sistem Informasi</td>
-         <td>
-            <a href="">Ubah</a> | <a href="">Hapus</a>
-         </td>
-      </tr>
+      <!-- Looping -->
+      <?php $i = 1;
+      foreach ($mahasiswa as $mhs) : ?>
+         <tr>
+            <td><?= $i++; ?></td>
+            <td>Foto</td>
+            <td><?= $mhs['nim']; ?></td>
+            <td><?= $mhs['nama']; ?></td>
+            <td><?= $mhs['prodi']; ?></td>
+            <td>
+               <a href="">Ubah</a> | <a href="">Hapus</a>
+            </td>
+         </tr>
+      <?php endforeach; ?>
    </table>
 </body>
 
