@@ -11,7 +11,7 @@ $file_tmp = $_FILES['file']['tmp_name'];
 
 if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
     if ($ukuran < 1044070) {
-        move_uploaded_file($file_tmp, 'file/' . $nama);
+        move_uploaded_file($file_tmp, '../asset/' . $nama);
         $query = mysqli_query($konek, "insert into mahasiswa values ('" . $_POST['nim'] . "','"
             . $_POST['nama'] . "','" . $_POST['prodi'] . "','" . $nama . "');");
         if ($query) {

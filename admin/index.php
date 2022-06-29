@@ -60,7 +60,7 @@ session_start();
         ?>
             <tr>
                 <td><?php echo $i; ?></td>
-                <td><img src="<?php echo '.../asset/' . $row['foto']; ?>" style="width: 200px; height: auto;"></td>
+                <td><img src="<?php echo '../asset/' . $row['foto']; ?>" style="width: 200px; height: auto;"></td>
                 <td><?php echo $row['nim']; ?></td>
                 <td><?php echo $row['nama']; ?></td>
                 <td><?php echo $row['prodi']; ?></td>

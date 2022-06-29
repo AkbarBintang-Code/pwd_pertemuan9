@@ -17,9 +17,9 @@ session_start();
     <?php
     if (isset($_GET['alert'])) {
         if (isset($_GET['alert']) == "gagal") {
-            echo "<p>Maaf username atau password anda salah</p>";
+            echo "<script>alert('username dan password salah, harap ulangi');window.location='login.php';</script>";
         } else if (isset($_GET['alert']) == "belum login") {
-            echo "<p>Maaf anda harus login dulu</p>";
+            echo "<script>alert('anda belum login');window.location='login.php';</script>";
         }
     }
     ?>

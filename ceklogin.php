@@ -23,6 +23,10 @@ if ($result > 0) {
       // tentukan halaman yg di ases admin
       header("Location:user/index.php");
    } else {
-      header("Location:index.php?alert=gagal");
+
+      // alihkan ke halaman login kembali
+      header("location:login.php?alert=gagal");
    }
+} else {
+   header("location:login.php?alert=gagal");
 }

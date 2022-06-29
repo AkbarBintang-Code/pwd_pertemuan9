@@ -13,7 +13,7 @@ session_start();
 
 <body>
    <h1>Halaman User</h1>
-   <h2>Halo User selamat datang <?php echo $_SESSION['level'] ?></h2>
+   <h2>Halo selamat datang <?php echo $_SESSION['level'] ?></h2>
    <button><a href="logout.php">logout</a></button>
 </body>
 
